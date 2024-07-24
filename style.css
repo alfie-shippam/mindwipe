@@ -51,7 +51,7 @@ textarea:hover {
 
 textarea:focus {
     outline: none;
-    box-shadow: 4px 4px 0 0 black;
+    box-shadow: 4px 4px 0 0 greenyellow;
 }
 
 button {
@@ -84,6 +84,7 @@ button:active {
         width: 0;
         white-space: nowrap;
         padding: 0;
+        box-shadow: none;
     }
 
     100% {
@@ -95,3 +96,15 @@ button:active {
 
 .shrink {
     animation: shrink 2s cubic-bezier(0.7, 0, 0.5, 1) forwards;}
+
+@media (max-width: 768px) {
+    .container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 55%;
+    }
+}
